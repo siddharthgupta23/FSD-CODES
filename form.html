@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body {
+      background: #f2f6f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 25px 30px;
+      border: 5px solid #0ed329;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-top: 6px;
+      border: 1px solid #aaa;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+    .options {
+      margin-top: 8px;
+    }
+    .options label {
+      font-weight: normal;
+      display: block;
+      margin-top: 5px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      display: block;
+      margin-top: 4px;
+    }
+    .submit-btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background: #2e7d32;
+      border: none;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .submit-btn:hover {
+      background: #256528;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Feedback Form</h2>
+
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Age</label>
+      <input type="number" placeholder="Enter your age">
+
+      <label>Which option best describes you?</label>
+      <select>
+        <option>Select your role</option>
+        <option>Student</option>
+        <option>Teacher</option>
+        <option>Professional</option>
+        <option>Other</option>
+      </select>
+
+      <label>Would you recommend GeeksforGeeks to a friend?</label>
+      <div class="options">
+        <label><input type="radio" name="recommend"> Yes</label>
+        <label><input type="radio" name="recommend"> No</label>
+        <label><input type="radio" name="recommend"> Maybe</label>
+      </div>
+
+      <label>Languages and Frameworks known (Check all that apply)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> C</label>
+        <label><input type="checkbox"> C++</label>
+        <label><input type="checkbox"> C#</label>
+        <label><input type="checkbox"> Java</label>
+        <label><input type="checkbox"> Python</label>
+        <label><input type="checkbox"> JavaScript</label>
+        <label><input type="checkbox"> React</label>
+        <label><input type="checkbox"> Angular</label>
+        <label><input type="checkbox"> Django</label>
+        <label><input type="checkbox"> Spring</label>
+      </div>
+
+      <label>Any comments or suggestions</label>
+      <input type="text" placeholder="Enter">
