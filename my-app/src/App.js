@@ -1,9 +1,11 @@
 // import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
+import Button from './components/C_B_D_Button';
+ // import C_B_D_Button from './components/C_B_D_Button';
 // import { d, t } from './d1.js';
 
-//function App() {
+//function App() {  
   //return (
     // <div className="App">
     //   <header className="App-header">
@@ -24,7 +26,7 @@ import './App.css';
 
 
      // const num2 = 
-
+     
       return (
         <><input type='number' value={num1} onChange={(e) => setNum1(Number(e.target.value))} /><div style={{ textAlign: "center", marginTop: "50px" }}>
           <input type='number' value={num2} onChange={(e) => setNum2(Number(e.target.value))} /><div style={{ textAlign: "center", marginTop: "70px" }}></div>
@@ -34,7 +36,10 @@ import './App.css';
           <h2>Subtraction: {num1} - {num2} = {num1 - num2}</h2>
           <h2>Multiplication: {num1} × {num2} = {num1 * num2}</h2>
           <h2>Division: {num1} ÷ {num2} = {num1 / num2}</h2>
-        </div></>
+
+        </div>
+        <Button onClick={() => { setNum1(0); setNum2(0); }} text="Reset" />
+        </>
       );
     }
 
